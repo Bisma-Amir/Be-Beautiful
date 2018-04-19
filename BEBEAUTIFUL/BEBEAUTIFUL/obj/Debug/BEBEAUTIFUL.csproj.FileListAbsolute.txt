@@ -1,0 +1,10 @@
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\bin\Debug\BEBEAUTIFUL.exe.config
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\bin\Debug\BEBEAUTIFUL.exe
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\bin\Debug\BEBEAUTIFUL.pdb
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.csprojResolveAssemblyReference.cache
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.frmlogin.resources
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.Properties.Resources.resources
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.csproj.GenerateResource.cache
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.csproj.CoreCompileInputs.cache
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.exe
+B:\Maham\semester 4\BEBEAUTIFUL\BEBEAUTIFUL\obj\Debug\BEBEAUTIFUL.pdb

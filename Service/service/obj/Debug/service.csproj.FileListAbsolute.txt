@@ -1,0 +1,7 @@
+B:\Maham\semester 4\OOAD lab\service\service\bin\service.dll.config
+B:\Maham\semester 4\OOAD lab\service\service\bin\service.dll
+B:\Maham\semester 4\OOAD lab\service\service\bin\service.pdb
+B:\Maham\semester 4\OOAD lab\service\service\obj\Debug\service.csproj.CoreCompileInputs.cache
+B:\Maham\semester 4\OOAD lab\service\service\obj\Debug\service.dll
+B:\Maham\semester 4\OOAD lab\service\service\obj\Debug\service.pdb
+B:\Maham\semester 4\OOAD lab\service\service\obj\Debug\service.csprojResolveAssemblyReference.cache
