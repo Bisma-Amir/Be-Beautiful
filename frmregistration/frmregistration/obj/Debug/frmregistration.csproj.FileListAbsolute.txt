@@ -1,0 +1,9 @@
+D:\menahal\frmregistration\frmregistration\bin\Debug\frmregistration.exe.config
+D:\menahal\frmregistration\frmregistration\bin\Debug\frmregistration.exe
+D:\menahal\frmregistration\frmregistration\bin\Debug\frmregistration.pdb
+D:\menahal\frmregistration\frmregistration\obj\Debug\frmregistration.csprojResolveAssemblyReference.cache
+D:\menahal\frmregistration\frmregistration\obj\Debug\frmregistration.Form1.resources
+D:\menahal\frmregistration\frmregistration\obj\Debug\frmregistration.Properties.Resources.resources
+D:\menahal\frmregistration\frmregistration\obj\Debug\frmregistration.csproj.GenerateResource.Cache
+D:\menahal\frmregistration\frmregistration\obj\Debug\frmregistration.exe
+D:\menahal\frmregistration\frmregistration\obj\Debug\frmregistration.pdb
