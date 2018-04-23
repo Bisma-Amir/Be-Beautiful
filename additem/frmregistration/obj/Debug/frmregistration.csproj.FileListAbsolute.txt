@@ -1,0 +1,3 @@
+C:\Users\Sana Hassan\Desktop\additem\frmregistration\bin\Debug\frmregistration.exe.config
+C:\Users\Sana Hassan\Desktop\additem\frmregistration\obj\Debug\frmregistration.exe
+C:\Users\Sana Hassan\Desktop\additem\frmregistration\obj\Debug\frmregistration.pdb
