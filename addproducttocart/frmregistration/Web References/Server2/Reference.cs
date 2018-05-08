@@ -59,6 +59,8 @@ namespace frmregistration.Server2 {
         
         private System.Threading.SendOrPostCallback calculatediscountOperationCompleted;
         
+        private System.Threading.SendOrPostCallback getmakeupartistOperationCompleted;
+        
         private bool useDefaultCredentialsSetExplicitly;
         
         /// <remarks/>
@@ -141,6 +143,9 @@ namespace frmregistration.Server2 {
         
         /// <remarks/>
         public event calculatediscountCompletedEventHandler calculatediscountCompleted;
+        
+        /// <remarks/>
+        public event getmakeupartistCompletedEventHandler getmakeupartistCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -621,6 +626,35 @@ namespace frmregistration.Server2 {
         }
         
         /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/getmakeupartist", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/service")]
+        public MakeupArtist[] getmakeupartist() {
+            object[] results = this.Invoke("getmakeupartist", new object[0]);
+            return ((MakeupArtist[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void getmakeupartistAsync() {
+            this.getmakeupartistAsync(null);
+        }
+        
+        /// <remarks/>
+        public void getmakeupartistAsync(object userState) {
+            if ((this.getmakeupartistOperationCompleted == null)) {
+                this.getmakeupartistOperationCompleted = new System.Threading.SendOrPostCallback(this.OngetmakeupartistOperationCompleted);
+            }
+            this.InvokeAsync("getmakeupartist", new object[0], this.getmakeupartistOperationCompleted, userState);
+        }
+        
+        private void OngetmakeupartistOperationCompleted(object arg) {
+            if ((this.getmakeupartistCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.getmakeupartistCompleted(this, new getmakeupartistCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
         public new void CancelAsync(object userState) {
             base.CancelAsync(userState);
         }
@@ -696,6 +730,80 @@ namespace frmregistration.Server2 {
             }
             set {
                 this.productpriceField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/service")]
+    public partial class MakeupArtist {
+        
+        private string makeaddressField;
+        
+        private string makecityField;
+        
+        private string makenameField;
+        
+        private string makepasswordField;
+        
+        private string makephoneField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Makeaddress {
+            get {
+                return this.makeaddressField;
+            }
+            set {
+                this.makeaddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Makecity {
+            get {
+                return this.makecityField;
+            }
+            set {
+                this.makecityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Makename {
+            get {
+                return this.makenameField;
+            }
+            set {
+                this.makenameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Makepassword {
+            get {
+                return this.makepasswordField;
+            }
+            set {
+                this.makepasswordField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Makephone {
+            get {
+                return this.makephoneField;
+            }
+            set {
+                this.makephoneField = value;
             }
         }
     }
@@ -1085,6 +1193,32 @@ namespace frmregistration.Server2 {
             get {
                 this.RaiseExceptionIfNecessary();
                 return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    public delegate void getmakeupartistCompletedEventHandler(object sender, getmakeupartistCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class getmakeupartistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal getmakeupartistCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public MakeupArtist[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((MakeupArtist[])(this.results[0]));
             }
         }
     }

@@ -54,7 +54,7 @@ namespace frmregistration
                 if (isvalid_cust)
                 {
                     MessageBox.Show("login successful");
-                    frmcustomerproduct k8 = new frmcustomerproduct();
+                    frmoption k8 = new frmoption();
                     this.Hide();
                     k8.Show();
 
@@ -83,6 +83,11 @@ namespace frmregistration
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkBox04_CheckedChanged(object sender, EventArgs e)
         {
 
         }

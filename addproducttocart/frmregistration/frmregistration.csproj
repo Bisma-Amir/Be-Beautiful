@@ -60,6 +60,12 @@
     <Compile Include="frmadditems.Designer.cs">
       <DependentUpon>frmadditems.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmartist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmartist.Designer.cs">
+      <DependentUpon>frmartist.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmcustbill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +95,12 @@
     </Compile>
     <Compile Include="frmlogin.Designer.cs">
       <DependentUpon>frmlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmoption.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmoption.Designer.cs">
+      <DependentUpon>frmoption.cs</DependentUpon>
     </Compile>
     <Compile Include="frontpage.cs">
       <SubType>Form</SubType>
@@ -122,6 +134,9 @@
     <EmbeddedResource Include="frmadditems.resx">
       <DependentUpon>frmadditems.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmartist.resx">
+      <DependentUpon>frmartist.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmcustbill.resx">
       <DependentUpon>frmcustbill.cs</DependentUpon>
     </EmbeddedResource>
@@ -137,6 +152,9 @@
     <EmbeddedResource Include="frmlogin.resx">
       <DependentUpon>frmlogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmoption.resx">
+      <DependentUpon>frmoption.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frontpage.resx">
       <DependentUpon>frontpage.cs</DependentUpon>
     </EmbeddedResource>
@@ -151,6 +169,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="shoppingcart.resx">
       <DependentUpon>shoppingcart.cs</DependentUpon>
@@ -165,6 +184,9 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <None Include="Web References\Server2\CompositeType.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\Server2\MakeupArtist.datasource">
       <DependentUpon>Reference.map</DependentUpon>
     </None>
     <None Include="Web References\Server2\Product.datasource">
@@ -209,6 +231,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Web References\Server2\Service1.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4x1widgets_beauty_lipsticks-d88ca %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\make-up_powder_beauty_feminine_lipstick_2560x1440_hd-wallpaper-1742926 %281%291.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

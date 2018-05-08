@@ -22,4 +22,20 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="CompositeType" nillable="true" type="tns:CompositeType" />
+  <xs:complexType name="ArrayOfMakeupArtist">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="MakeupArtist" nillable="true" type="tns:MakeupArtist" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfMakeupArtist" nillable="true" type="tns:ArrayOfMakeupArtist" />
+  <xs:complexType name="MakeupArtist">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Makeaddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Makecity" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Makename" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Makepassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Makephone" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="MakeupArtist" nillable="true" type="tns:MakeupArtist" />
 </xs:schema>
